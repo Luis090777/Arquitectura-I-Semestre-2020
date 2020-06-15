@@ -1,3 +1,22 @@
+def corrimiento_izquierda(numero_a,bits):
+  """
+  Make a shift left of the upcoming bits by n bits.
+  Input: numero_a is one of the numbers and bits is the amount of bits that we are going
+  to shift, usually 1
+  Output: Returns the tuple shifted by n bits.
+  """
+
+  # If type of numero_a is different than a tuple, it will return an empty tuple
+  # It can also be seeing as a "True"
+  if type(numero_a) != tuple:
+    return ()
+  
+  # If it is tuple, it will return the tuple shifted by n bits
+  # In python we can use "<<" to make a shift left, but we wanted to do it in binary, so
+  # we are using a step by step operation to add 0's to the tuple
+  else:
+    return numero_a + (0,) * bits
+
 def validar_numeros(a,b):
 
   """
