@@ -6,8 +6,8 @@ def corrimiento_izquierda(numero_a,bits):
   Output: Returns the tuple shifted by n bits.
   """
 
-  # If type of numero_a is different than a tuple, it will return an empty tuple
-  # It can also be seeing as a "True"
+  # If type of numero_a is different than a tuple, it will return an empty tuple as output
+  # It can also be seeing as a "True" 
   if type(numero_a) != tuple:
     return ()
   
